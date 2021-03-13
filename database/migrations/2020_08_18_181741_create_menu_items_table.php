@@ -18,7 +18,7 @@ class CreateMenuItemsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->unsignedBigInteger('item_type_id')->references('id')->on('item_types');
-            $table->string('item_image')->default('../uploads/FoodImage/pizza.jpg');
+            $table->string('item_image')->default('../uploads/FoodImage/default.jpg');
             $table->timestamps();
         });
     }
